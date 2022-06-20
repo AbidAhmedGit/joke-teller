@@ -3,3 +3,68 @@
 html {
   box-sizing: border-box;
 }
+
+body {
+  margin: 0;
+  /* background: #03A062; */
+  /* background: #EBEDED; */
+  background: #AFB7B9;
+
+}
+
+.container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: url('./robot.gif');
+  /* background-size: 500px 600px; */
+  background-size: contain;
+  /* background-position: center center; */
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+
+button {
+  cursor: pointer;
+  outline: none;
+  width: 200px;
+  height:50px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 20px;
+  color: white;
+  background: #2B2B3F;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 2px 2px 20px 10px rgba(0, 0, 0, 0.2);
+  background-size: cover;
+}
+
+button:hover {
+  filter: brightness(125%)
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+button:disabled {
+  cursor: default;
+  filter: brightness(30%);
+}
+
+/* media Query: Tablet or smaller */
+@media screen and (max-width: 1000px) {
+  .container {
+    background-size: cover;
+    background-position: center top;
+
+  }
+
+  button {
+    box-shadow: 5px 5px 30px 20px rgba(0, 0, 0, 0.5)
+  }
+}
+
