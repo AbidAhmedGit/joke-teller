@@ -8,7 +8,7 @@ body {
   margin: 0;
   /* background: #03A062; */
   /* background: #EBEDED; */
-  padding:0;
+  /* padding:0; */
   background: #AFB7B9;
 
 }
@@ -28,12 +28,12 @@ body {
   /* background-repeat: no-repeat; */
 }
 
-h1{
+/* h1{
   font-size: 50px;
   color:#FFFFCC;
   font-family: 'Bangers', cursive;
   margin-bottom: 0;
-}
+} */
 
 button {
   cursor: pointer;
@@ -66,13 +66,20 @@ button:disabled {
 /* media Query: Tablet or smaller */
 @media screen and (max-width: 1000px) {
   .container {
-    background-size: cover;
-    background-position: center center;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
 
   }
 
   button {
     box-shadow: 5px 5px 30px 20px rgba(0, 0, 0, 0.5)
   }
+
 }
 
