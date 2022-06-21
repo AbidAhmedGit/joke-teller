@@ -8,6 +8,7 @@ body {
   margin: 0;
   /* background: #03A062; */
   /* background: #EBEDED; */
+  padding:0;
   background: #AFB7B9;
 
 }
@@ -19,12 +20,19 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: url('./robot.gif');
+  /* background: url('./robot.gif'); */
   /* background-size: 500px 600px; */
-  background-size: contain;
+  /* background-size: contain; */
   /* background-position: center center; */
-  background-position: center top;
-  background-repeat: no-repeat;
+  /* background-position: left center; */
+  /* background-repeat: no-repeat; */
+}
+
+h1{
+  font-size: 50px;
+  color:#FFFFCC;
+  font-family: 'Bangers', cursive;
+  margin-bottom: 0;
 }
 
 button {
@@ -39,7 +47,7 @@ button {
   border: none;
   border-radius: 5px;
   box-shadow: 2px 2px 20px 10px rgba(0, 0, 0, 0.2);
-  background-size: cover;
+  /* background-size: cover; */
 }
 
 button:hover {
@@ -59,7 +67,7 @@ button:disabled {
 @media screen and (max-width: 1000px) {
   .container {
     background-size: cover;
-    background-position: center top;
+    background-position: center center;
 
   }
 
